@@ -5,7 +5,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
- :root {
+:root {
     /* Declaro variables CSS con colores principales */
     --color-theme: #00594c;
     --color-active: #5df2d6;
