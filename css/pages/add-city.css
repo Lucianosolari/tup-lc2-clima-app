@@ -1,0 +1,49 @@
+#ciudad_agregada {
+    display: block;
+    height: 35px;
+    width: 240px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+section {
+    text-align: center;
+    font-weight: 500;
+}
+
+#agregar {
+    background-color: #00594c;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 900;
+    border: none;
+    margin: 0px 0px 20px 0px
+}
+
+div.mensaje {
+    display: grid;
+    flex-direction: column;
+    margin: 0px 163px;
+    align-items: center;
+    text-align: center;
+    gap: 10px
+}
+
+.success {
+    background-color: #28a745;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.error {
+    background-color: #dc3545;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.warning {
+    background-color: #ffc107;
+    border-radius: 10px;
+    color: #ffffff;
+}
