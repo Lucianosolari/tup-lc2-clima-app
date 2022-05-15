@@ -1,3 +1,48 @@
-* label {
+form {
+    display: grid;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+#limpiar {
+    background-color: #00594c;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 900;
+    border: none;
+    padding: 10px;
     display: block;
+}
+
+#enviar {
+    background-color: #00594c;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 900;
+    border: none;
+    padding: 10px;
+    display: block
+}
+
+div.mensaje_valido {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mensaje_valido p {
+    background-color: #dc3545;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px
 }
