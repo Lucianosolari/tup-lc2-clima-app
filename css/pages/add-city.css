@@ -11,16 +11,6 @@ section {
     font-weight: 500;
 }
 
-#agregar {
-    background-color: #00594c;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 10px;
-    font-weight: 900;
-    border: none;
-    margin: 0px 0px 20px 0px
-}
-
 div.mensaje {
     display: grid;
     flex-direction: column;

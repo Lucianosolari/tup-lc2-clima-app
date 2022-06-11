@@ -8,36 +8,6 @@ label {
     margin-top: 10px;
 }
 
-input {
-    padding: 8px;
-    border-radius: 5px;
-    border: solid 1px;
-}
-
-#limpiar {
-    background-color: #00594c;
-    border-radius: 10px;
-    color: #ffffff;
-    font-weight: 900;
-    border: none;
-    padding: 10px;
-    display: block;
-    width: 100px;
-    margin: 10px 0px 11px 30px
-}
-
-#enviar {
-    background-color: #00594c;
-    border-radius: 10px;
-    color: #ffffff;
-    font-weight: 900;
-    border: none;
-    padding: 10px;
-    display: block;
-    width: 100px;
-    margin: -47px 0px 21px 140px;
-}
-
 div.mensaje_valido {
     display: grid;
     grid-template-columns: 460px;
