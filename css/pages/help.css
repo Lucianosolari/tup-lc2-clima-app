@@ -20,3 +20,8 @@ section form div {
 .valido {
     background-color: #dc3545;
 }
+
+div.contenedor {
+    margin-right: 110px;
+    margin-left: 110px;
+}
