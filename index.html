@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
 
+    <!-- Vinculo JS -->
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/idex.js" defer></script>
+
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -36,26 +41,27 @@
             <form action="#">
                 <label for="Seleccionable"></label>
                 <select name="ciudad" id="ciudad">
-                    <option value="SELEC" - disabled - selected>Seleccionar ciudad</option>
+                  <!--  <option value="SELEC" - disabled - selected>Seleccionar ciudad</option>
                     <option value="ROSARIO">Rosario</option>
-                    <option value="RAFAELA">Rafaela</option>
+                    <option value="RAFAELA">Rafaela</option> -->
                 </select>
-                <button type="button" name="consultar" value="Consultar" id="consultar"> Consultar</button>
+
+                <button type="button" name="consultar" value="Consultar" id="consultar" onclick="return createCard()"> Consultar</button>
             </form>
 
         </section>
 
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
-                <h3>Rosario</h3>
+            <!-- <div class="card">-->
+            <!--<h3>Rosario</h3>
                 <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Imagen punto rojo">
                 <p>Temperatura: 25.31°</p>
                 <p>Sensación térmica: 24.65°</p>
                 <p>Humedad: 29%</p>
                 <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011 P</p>
-            </div>
+                <p>Presión: 1011 P</p>-->
+            <!--   </div>-->
         </section>
     </main>
 
