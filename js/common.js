@@ -9,9 +9,9 @@ function getCitiesFromLocalStorage() {
     return cities;
 }
 
-function consultAPI(cityName) {
+function consultAPI(newCity) {
     let claveApi = "7bd8f5bfc0d8d0b934abf9a144da03cf"
-    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${claveApi}&units=metric&lang=es`)
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${claveApi}&units=metric&lang=es`)
         .then(response => {
             if (response.ok) return response.json();
             throw new Error("error")

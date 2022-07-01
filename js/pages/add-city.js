@@ -1,3 +1,6 @@
+let botonAgregar = document.getElementById("agregar");
+botonAgregar.addEventListener("click", addCityToLocalStorage)
+
 async function validateCity(newCity) {
     let cities = getCitiesFromLocalStorage();
 
@@ -46,6 +49,3 @@ async function addCityToLocalStorage() {
 let exitoMessage = '<p class="alerta success" >Ciudad agregada con éxito</p>';
 let errorMessage = '<p class="alerta error" >Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>';
 let existeMessage = '<p class="alerta warning">La ciudad ingresada ya se encuentra almacenada</p>';
-
-let botonAgregar = document.getElementById("agregar");
-botonAgregar.addEventListener("click", addCityToLocalStorage)

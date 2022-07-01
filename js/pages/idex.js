@@ -14,7 +14,4 @@ function createCard() {
     consultAPI(selector.value);
 }
 
-let consultButton = document.getElementById("consultar");
-consultButton.addEventListener("click", createCard)
-
 addCitiesToSelector();
