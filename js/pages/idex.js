@@ -1,5 +1,9 @@
 let selector = document.getElementById("ciudad");
 
+const ocultarCard = document.getElementById("section-weather-result");
+
+const loader = document.querySelector(".loader");
+
 function addCitiesToSelector() {
     let cities = getCitiesFromLocalStorage();
 
@@ -11,6 +15,7 @@ function addCitiesToSelector() {
 }
 
 function createCard() {
+
     consultAPI(selector.value);
 }
 

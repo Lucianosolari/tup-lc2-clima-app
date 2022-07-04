@@ -11,3 +11,7 @@ div.card {
     text-align: center;
     width: 260px;
 }
+
+.loader {
+    margin-top: 90px;
+}

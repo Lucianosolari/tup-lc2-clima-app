@@ -1,4 +1,4 @@
-let botonAgregar = document.getElementById("agregar");
+const botonAgregar = document.getElementById("agregar");
 botonAgregar.addEventListener("click", addCityToLocalStorage)
 
 let exitoMessage = '<p class="alerta success" >Ciudad agregada con éxito</p>';
@@ -27,7 +27,7 @@ function removeMessage() {
     setTimeout(function() {
         remov = document.getElementsByClassName("alerta");
         remov[0].remove();
-    }, 4000);
+    }, 5000);
 }
 
 async function addCityToLocalStorage() {
@@ -38,20 +38,26 @@ async function addCityToLocalStorage() {
 
     switch (await validateCity(newCity)) {
         case "success":
-            loader.style.display = 'none';
             cities.push(newCity);
             localStorage.setItem("CITIES", JSON.stringify(cities));
-            document.getElementById("añadir_ciudad").innerHTML += exitoMessage;
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.getElementById("añadir_ciudad").innerHTML += exitoMessage;
+            }, 2000);
             removeMessage();
             break;
         case "warning":
-            loader.style.display = 'none';
-            document.getElementById("añadir_ciudad").innerHTML += existeMessage
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.getElementById("añadir_ciudad").innerHTML += existeMessage;
+            }, 2000);
             removeMessage();
             break;
         case "error":
-            loader.style.display = 'none';
-            document.getElementById("añadir_ciudad").innerHTML += errorMessage;
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.getElementById("añadir_ciudad").innerHTML += errorMessage;
+            }, 2000);
             removeMessage();
             break;
     };
