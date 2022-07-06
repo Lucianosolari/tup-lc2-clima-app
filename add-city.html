@@ -13,6 +13,7 @@
     <script src="js/common.js" defer></script>
     <script src="js/pages/add-city.js" defer></script>
 
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -37,7 +38,7 @@
             <form action="#" id="añadir_ciudad" class="añadir_ciudad">
                 <label for="ciudad_agregada">Ingrese la ciudad a agregar:</label>
                 <input type="text" name="ciudad_agregada" id="ciudad_agregada"> <br>
-                <button type="button" name="agregar" value="agregar" id="agregar">Agregar</button>
+                <button type="button" name="agregar" value="agregar" id="agregar" onclick="addNewCityToLocalStorage()">Agregar</button>
             </form>
             <div id="mensaje" class="añadir_ciudad">
                 <!--
