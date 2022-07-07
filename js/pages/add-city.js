@@ -5,7 +5,7 @@ function addNewCityToLocalStorage() {
     let loader = document.querySelector(".loader");
     loader.style.display = 'block';
 
-    if (validarCiudad(newCity.value) === true) {
+    if (validarCiudad(newCity.value) === "noIncluida") {
         cities.push(newCity.value);
         localStorage.setItem("CITIES", JSON.stringify(cities));
 
@@ -15,7 +15,7 @@ function addNewCityToLocalStorage() {
             eliminarMensaje();
         }, 3000);
 
-    } else if (validarCiudad(newCity.value) === false) {
+    } else if (validarCiudad(newCity.value) === "incluida") {
 
         setTimeout(function() {
             loader.style.display = 'none';
@@ -37,20 +37,24 @@ function addNewCityToLocalStorage() {
 function validarCiudad(newCity) {
     let ciudadesValidar = localStorage.getItem("CITIES");
     ciudadesValidar = JSON.parse(ciudadesValidar);
-    debugger;
-    if (consultarApi(newCity) == "error") {
-        return "error"
-    }
-    if (ciudadesValidar.includes(newCity)) {
-        return false;
+
+    /* if (consultarApi(newCity)) {
+         return false;
+     } else*/
+
+    if (ciudadesValidar != null) {
+        if (ciudadesValidar.includes(newCity)) {
+            return "incluida";
+        } else {
+            return "noIncluida";
+        }
     } else {
-        return true;
+        return "noIncluida"
     }
 }
 
 function eliminarMensaje() {
     setTimeout(function() {
-        /* mensaje = document.getElementsByClassName("alerta")[0]; */
         mensaje = document.querySelector(".alerta");
         mensaje.style.display = 'none';
     }, 4000);

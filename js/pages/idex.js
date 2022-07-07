@@ -1,6 +1,6 @@
 const selectCiudades = document.getElementById('ciudad');
 const claveApi = "7bd8f5bfc0d8d0b934abf9a144da03cf";
-const sectionResultado = document.getElementById("section-weather-result");
+
 
 addCitiesToSelect();
 
@@ -14,7 +14,7 @@ function addCitiesToSelect() {
     }
 }
 
-/*movi funcion validarApi al common.js para que todas las paginas la puedan ver*/
+/*funcion validarApi la movi al common.js para que todas las paginas la puedan ver*/
 
 function mostrarClima(data) {
     let city = data.name;
